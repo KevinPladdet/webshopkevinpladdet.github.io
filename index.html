@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Office Supplies</title>
+    <link rel="stylesheet" href="/style/stylesheet.css">
+</head>
+<body onload = "Loads()">
+
+    <h1 class="webshopTitle">Welcome to Office Supplies!</h1>
+
+    <div width="300" class="border" style="float:left; margin:10px;">
+        <div class="applyMargin">
+            <img src="img/pencil.png" alt="..." width="300" height="300">
+            <br></br>
+            <p id="pencilprice"></p>
+            <p id="pencilstock"></p>
+            <button id="pencilbutton" onclick="ProductOne()">Buy Pencil!</button>
+        </div>
+    </div>
+
+    <div width="300" class="border" style="float:left; margin:10px;">
+        <div class="applyMargin">
+            <img src="img/eraser.png" alt="..." width="300" height="300">
+            <br></br>
+            <p id="eraserprice"></p>
+            <p id="eraserstock"></p>
+            <button id="eraserbutton" onclick="ProductTwo()">Buy Eraser!</button>
+        </div>
+    </div>
+
+    <div width="300" class="border" style="float:left; margin:10px;">
+        <div class="applyMargin">
+            <img src="img/scissors.png" alt="..." width="300" height="300">
+            <br></br>
+            <p id="scissorsprice"></p>
+            <p id="scissorsstock"></p>
+            <button id="scissorsbutton" onclick="ProductThree()">Buy Scissors!</button>
+        </div>
+    </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div class="border applyMarginCheckout">
+        <button onclick="CheckoutButton()">CHECKOUT</button>
+
+        <h id="checkout">
+            <br></br>
+            <font size="+1">Welcome to your basket</font>
+            <br></br>
+            Summary (without VAT): <p id="summary"></p>
+            <br></br>
+            Total (with VAT): <p id="total"></p>
+        </h>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
